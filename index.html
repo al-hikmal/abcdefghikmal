@@ -1,329 +1,320 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hikmal | Vibe Coder</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AL Hikmal — Vibe Coder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-<div class="ambient"></div>
-
-<!-- NAV -->
-<nav>
-  <div class="logo">Hikmal.</div>
-  <ul class="nav-links">
-    <li><a href="#beranda">Beranda</a></li>
-    <li><a href="#tentang">Tentang</a></li>
-    <li><a href="#prestasi">Prestasi</a></li>
-    <li><a href="#proyek">Proyek</a></li>
-    <li><a href="#kontak">Kontak</a></li>
-  </ul>
-  <div class="nav-actions">
-    <button class="btn-outline">ID</button>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="beranda">
-  <div class="hero-left">
-    <div class="tag"><span class="tag-dot"></span> Tersedia untuk proyek baru</div>
-    <p class="greeting">Halo, Saya</p>
-    <h1>AL Hikmal</h1>
-    <div class="role-line">
-      <span class="role">Vibe Coder</span>
-      <span class="role-sep"></span>
-      <span class="role">Mahasiswa</span>
-    </div>
-    <p class="bio">Saya seorang Mahasiswa yang aktif diberbagai platform sosial media, saya berambisi menjadi seorang Software Engineer yang bersemangat menciptakan pengalaman digital yang bermakna.</p>
-    <div class="hero-actions">
-      <a href="#proyek" class="btn-primary">Lihat Proyek →</a>
-      <a href="#kontak" class="btn-ghost">Kontak Saya</a>
-    </div>
-    <div class="socials">
-      <div class="social-icon" title="GitHub">
-        <a href="http://github.com/al-hikmal" target="_blank"><i class="bi bi-github"></i></a></div>
-      <div class="social-icon" title="LinkedIn">
-        <a href="http://linkedin.com/in/al-hikmal" target="_blank"><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="social-icon" title="Instagram">
-        <a href="http://instagram.com/al_hikml" target="_blank"><i class="bi bi-instagram"></i></a>
-      </div>
-      <div class="social-icon" title="TikTok">
-        <a href="http://tiktok.com/@al_hikmal" target="_blank"><i class="bi bi-tiktok"></i></a>
-      </div>
+<header class="topbar">
+  <div class="wrap">
+    <a href="#profil" class="brand">
+      <span class="brand-mark">AH</span>
+      AL Hikmal
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#profil">Profil</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#prestasi">Prestasi</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <div class="bar-tools">
+      <button class="icon-btn" id="themeBtn" title="Ganti mode gelap/terang" aria-label="Ganti tema">◐</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
     </div>
   </div>
+</header>
 
-  <div class="hero-right">
-    <div class="profile-card">
-      <div class="card-glow"></div>
-      <div class="card-inner">
-        <div class="card-photo">
-          <img src="assets/foto-gueh.jpg" alt="Foto" style="width: 100%; height: 100; object-fit: cover;">
+<main>
+
+  <!-- PROFIL / HERO -->
+  <section id="profil" class="sheet hero">
+    <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
+    <span class="sheet-tab">01 — Profil</span>
+
+    <div class="hero-grid hero-anim">
+      <div>
+        <div class="kicker">Berkas biodata diri</div>
+        <h1>AL Hikmal</h1>
+        <p class="role">Mahasiswa yang membagi perhatian antara kode, desain visual, dan ruang organisasi.</p>
+        <p class="bio">Saat ini menjalani masa kuliah sambil terus mengasah kemampuan di bidang pengembangan web, pemrograman dasar, dan desain grafis — tanpa melepas keaktifan di berbagai organisasi sekolah dan sosial.</p>
+
+        <div class="meta-row">
+          <div class="meta-chip"><div class="k">Status</div><div class="v">Mahasiswa aktif</div></div>
+          <div class="meta-chip"><div class="k">Fokus</div><div class="v">Teknologi &amp; desain visual</div></div>
+          <div class="meta-chip"><div class="k">Organisasi</div><div class="v">OSIS, PMR, Pandu Digital</div></div>
         </div>
-        <div class="card-body">
-          <div class="card-name">AL Hikmal</div>
-          <div class="card-title">Mahasiswa & Vibe Coder</div>
-          <div class="card-status"><span class="status-dot"></span> Online — Siap bekerja sama</div>
-          <a href="https://linktr.ee/al_hikmal" target="_blank">
-          <button class="card-btn">Hubungi Saya</button>
-          </a>
+
+        <div class="btn-row">
+          <a href="#pengalaman" class="btn solid">Lihat pengalaman</a>
+          <a href="#kontak" class="btn">Hubungi saya</a>
         </div>
       </div>
-      <div class="float-tag float-tag-1">🎨 3+ Proyek</div>
-      <div class="float-tag float-tag-2">⚡ Mahasiswa Aktif</div>
-    </div>
-  </div>
-</section>
 
-<!-- TENTANG -->
-<section id="tentang">
-  <div class="section-label">01 — Tentang</div>
-  <div class="section-title">Sedikit <span>tentang saya</span></div>
-  <div class="about-grid reveal">
-    <div class="about-text">
-      <p>Saya adalah seorang mahasiswa yang bersemangat mengejar prestasi dan menciptakan pengalaman digital. Minat pada prestasi, organisasi, serta programming dimulai sejak saya bersekolah di SMAN 5 Pinrang dimana saya mengemban amanah sebagai sekretaris OSIS dan menjadi Wakil Ketua KPM-S Batch 1 serta menjadi Anggota organisasi di SMAN 5 Pinrang.</p>
-      <p>Latar belakang saya mencakup siswa aktif akademik dan non akademik di SMAN 5 Pinrang. Saya percaya bahwa dalam dunia digital, setiap individu memiliki potensi untuk menciptakan pengalaman yang berharga.</p>
-      <div class="skills-list">
-        <span class="skill-chip">HTML</span>
-        <span class="skill-chip">CSS</span>
-        <span class="skill-chip">Javascript</span>
-        <span class="skill-chip">C++</span>
-        <span class="skill-chip">CorelDraw</span>
+      <div class="hero-avatar">
+        <div class="avatar-frame">
+          <img src="assets/foto-guweh.jpg" alt="">
+        </div>
       </div>
     </div>
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-num">3<span>+</span></div>
-        <div class="stat-label">Proyek Selesai</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">12<span>+</span></div>
-        <div class="stat-label">Prestasi</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">1<span>+</span></div>
-        <div class="stat-label">Tahun Pengalaman</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">∞</div>
-        <div class="stat-label">Semangat Belajar</div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- PRESTASI -->
-<section id="prestasi">
-  <div class="section-label">02 — Prestasi</div>
-  <div class="section-title">Daftar <span>Prestasi</span></div>
-  <div class="projects-grid reveal">
-    <div class="project-card">
-      <img src="assets/foto-kpms.jpg" alt="foto-kpms" style="width: 100%;">
-      <div class="project-info">
-        <div class="project-tag">Organisasi</div>
-        <div class="project-name">Wakil Ketua KPM-S Batch 1</div>
-        <div class="project-desc">Peran aktif dalam Komunitas Programmer Muda Sulawesi Selatan sebagai Wakil Ketua Batch 1.</div>
-        <a href="https://www.instagram.com/p/DKKIlIdT4Gd/?igsh=Zmp3Z3VnZWY4N2M1" class="project-link">Lihat Prestasi <span>→</span></a>
-      </div>
+  <!-- TENTANG -->
+  <section id="tentang" class="sheet">
+    <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
+    <span class="sheet-tab">02 — Tentang</span>
+    <h2>Tentang saya</h2>
+    <div class="about-body">
+      <p>Ketertarikan saya pada teknologi berawal dari rasa penasaran terhadap cara kerja sebuah halaman web, yang lama-kelamaan berkembang menjadi kebiasaan belajar <strong>HTML, CSS, dan JavaScript</strong> secara mandiri, serta mendalami dasar-dasar <strong>C++</strong> pada sesi perkuliahan untuk memahami logika pemrograman. Di sisi lain, saya juga belajar <strong>CorelDraw</strong> di sesi perkuliahan, mulai dari desain logo, hingga materi pendukung perkuliahan.</p>
+      <p>Selain kemampuan teknis, saya percaya pengalaman berorganisasi sama pentingnya untuk membentuk cara berpikir dan bekerja sama. Pengalaman sebagai <strong>Sekretaris OSIS SMAN 5 Pinrang periode 2024/2025</strong>, dan sebelumnya sebagai <strong>anggota Bidang 9 Teknologi Informasi dan Komunikasi (TIK) periode 2023/2024</strong>, mengajarkan saya cara mengelola administrasi, komunikasi, dan kerja tim. Saya juga aktif sebagai anggota <strong>Palang Merah Remaja (PMR)</strong> dan <strong>Pandu Digital</strong>, dua wadah yang memperluas kepedulian saya terhadap kemanusiaan dan literasi digital di lingkungan sekitar.</p>
     </div>
-    <div class="project-card">
-      <img src="assets/foto-osis.jpg" alt="foto-osis" style="width: 100%;">
-      <div class="project-info">
-        <div class="project-tag">Organisasi</div>
-        <div class="project-name">Sekretaris OSIS Periode 2024/2025</div>
-        <div class="project-desc">Peran aktif dalam Organisasi Siswa Intra Sekolah SMAN 5 Pinrang Periode 2024/2025 sebagai Sekretaris.</div>
-        <a href="https://www.instagram.com/p/DKmFdUtS3lr/?igsh=MWRhd3B4YXVrYjB3NA==" class="project-link">Lihat Prestasi <span>→</span></a>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="assets/foto-pmr.jpg" alt="foto-pmr" style="width: 100%;">
-      <div class="project-info">
-        <div class="project-tag">Organisasi</div>
-        <div class="project-name">Anggota Organisasi</div>
-        <div class="project-desc">Peran aktif dalam berbagai Organisasi SMAN 5 Pinrang seperti Palang Merah Remaja dan Pandu Digital sebagai Anggota.</div>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-thumb p3">💻</div>
-      <div class="project-info">
-        <div class="project-tag">Kegiatan</div>
-        <div class="project-name">1 Sekolah 1 Programmer Andalan</div>
-        <div class="project-desc">Mengikuti kegiatan 1 Sekolah 1 Programmer Andalan di AAS Building, Makassar.</div>
-        <a href="https://drive.google.com/file/d/1qP9JjJjTUNBXFXMg5mICB6vMCliOFSv8/view?usp=sharing" class="project-link">Lihat Sertifikat <span>→</span></a>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="assets/foto-pmr-jurnalistik.JPG" alt="foto-pmr-jurnalistik" style="width: 100%;">
-      <div class="project-info">
-        <div class="project-tag">Lomba</div>
-        <div class="project-name">Juara 1 Lomba Jurnalistik</div>
-        <div class="project-desc">Menjadi Juara 1 dalam Lomba Jurnalistik di Jumpa Bhakti Gembira Kab. Pinrang 2024.</div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="assets/foto-jhic.jpg" alt="foto-jhic" style="width: 100%;">
-      <div class="project-info">
-        <div class="project-tag">Lomba</div>
-        <div class="project-name">Semi Finalist Jagoan Hosting Infra Competition</div>
-        <div class="project-desc">Menjadi Semi Finalist dalam Lomba Membuat Website Sekolah Jagoan Hosting Infra Competition 2025.</div>
-        <a href="https://drive.google.com/file/d/1VeLLi95-VUJPFfsaT3T-R0A3FlIMa30P/view?usp=sharing" class="project-link">Lihat Sertifikat <span>→</span></a>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-thumb p1">🎖</div>
-      <div class="project-info">
-        <div class="project-tag">Olimpiade</div>
-        <div class="project-name">Peraih Medali Emas Olimpiade Matematika University.Id</div>
-        <div class="project-desc">Predikat Medali Emas dalam Olimpiade Matematika Tingkat Nasional Kompetisi Festival Olimpiade Periode Desember Tahun 2025 yang diselenggarakan oleh Lembaga Pendidikan Resmi University ID Education Platform.</div>
-        <a href="https://drive.google.com/file/d/1Uq1sIuWx6zx3nG0RT95wzyu8LOHr8_3b/view?usp=sharing" class="project-link">Lihat Sertifikat <span>→</span></a>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-thumb p2">🏆</div>
-      <div class="project-info">
-        <div class="project-tag">Olimpiade</div>
-        <div class="project-name">Peraih Medali Emas Olimpiade Informatika University.Id</div>
-        <div class="project-desc">Predikat Medali Emas dalam Olimpiade Informatika Tingkat Nasional Kompetisi Festival Olimpiade Periode Desember Tahun 2025 yang diselenggarakan oleh Lembaga Pendidikan Resmi University ID Education Platform.</div>
-        <a href="https://drive.google.com/file/d/1ZLe3NrpRhRzs59KJKx-qsFuG2zKBmpNj/view?usp=sharing" class="project-link">Lihat Sertifikat <span>→</span></a>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-thumb p3">🥇</div>
-      <div class="project-info">
-        <div class="project-tag">Olimpiade</div>
-        <div class="project-name">Peraih Medali Emas Olimpiade Sosiologi University.Id</div>
-        <div class="project-desc">Predikat Medali Emas dalam Olimpiade Sosiologi Tingkat Nasional Kompetisi Festival Olimpiade Periode Desember Tahun 2025 yang diselenggarakan oleh Lembaga Pendidikan Resmi University ID Education Platform.</div>
-        <a href="https://drive.google.com/file/d/1_KYvoMHbD_V3cXb-87qanypFxXIbGVIE/view?usp=sharing" class="project-link">Lihat Sertifikat <span>→</span></a>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-thumb p1">🏅</div>
-      <div class="project-info">
-        <div class="project-tag">Olimpiade</div>
-        <div class="project-name">Peraih Medali Emas Olimpiade Matematika Olimnas.Id</div>
-        <div class="project-desc">Predikat Medali Emas dalam Olimpiade Matematika Tingkat Nasional Olimpiade Nasional Periode Desember Tahun 2025 yang diselenggarakan oleh CV. Alberta Nusa Education.</div>
-        <a href="https://drive.google.com/file/d/1IU86PbDyP1raluZy7JPZ-FdsspcXyeX2/view?usp=sharing" class="project-link">Lihat Sertifikat <span>→</span></a>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-thumb p2">🥈</div>
-      <div class="project-info">
-        <div class="project-tag">Olimpiade</div>
-        <div class="project-name">Peraih Medali Perak Olimpiade Matematika NBSK</div>
-        <div class="project-desc">Predikat Medali Perak dalam Olimpiade Matematika Tingkat Nasional Nusantara Best Student Competition Tahun 2025 yang diselenggarakan oleh Liga Olimpiade dan Smart Student.</div>
-        <a href="https://drive.google.com/file/d/1II7OwxVs1ufe6LFbFvNc7UJaSmMx3AY1/view?usp=sharing" class="project-link">Lihat Sertifikat <span>→</span></a>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-thumb p3">🥉</div>
-      <div class="project-info">
-        <div class="project-tag">Olimpiade</div>
-        <div class="project-name">Peraih Medali Perunggu Olimpiade Matematika KPJI</div>
-        <div class="project-desc">Predikat Medali Perunggu dalam Olimpiade Matematika Tingkat Nasional Kompetisi Pelajar Jenius Indonesia Tahun 2025 yang diselenggarakan oleh Liga Olimpiade.</div>
-        <a href="https://drive.google.com/file/d/16T2_5x2RSc4bHeLwCURkspwh_K-dSEhy/view?usp=sharing" class="project-link">Lihat Sertifikat <span>→</span></a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROYEK -->
-<section id="proyek">
-  <div class="section-label">03 — Proyek</div>
-  <div class="section-title">Proyek <span>Saya</span></div>
-  <div class="projects-grid reveal">
-    <div class="project-card">
-      <div class="project-thumb p3">❤️</div>
-      <div class="project-info">
-        <div class="project-tag">Branding</div>
-        <div class="project-name">Hikmal Website 1.0</div>
-        <div class="project-desc">Website personal branding yang dibuat menggunakan HTML, CSS, dan Javascript untuk menampilkan informasi tentang saya.</div>
-        <a href="project/project1/index.html" class="project-link">Lihat Proyek <span>→</span></a>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-thumb p2">🏫</div>
-      <div class="project-info">
-        <div class="project-tag">Sekolah</div>
-        <div class="project-name">Website SMAN 5 Pinrang</div>
-        <div class="project-desc">Website sekolah SMAN 5 Pinrang yang saya buat untuk lomba Infra Competition Jagoan Hosting 2025.</div>
-        <a href="https://sman5pinrang.web.id" target="_blank" class="project-link">Lihat Proyek <span>→</span></a>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- KEAHLIAN -->
+  <section id="keahlian" class="sheet">
+    <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
+    <span class="sheet-tab">03 — Keahlian</span>
+    <h2>Keahlian</h2>
+    <p class="lede">Kemampuan yang sedang terus saya kembangkan, di ranah pengembangan web, pemrograman dasar, hingga desain grafis.</p>
 
-<!-- KONTAK -->
-<section id="kontak">
-  <div class="contact-wrap reveal">
-    <div class="section-label" style="text-align:center">04 — Kontak</div>
-    <div class="section-title">Mari <span>bekerja sama</span></div>
-    <p>Punya ide yang menarik? just call me. Hubungi saya!</p>
-    <div class="contact-card">
-      <a href="https://linktr.ee/al_hikmal" target="_blank">
-      <button class="btn-send">Hubungi Saya <span>→</span></button>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-mark">HT</div>
+        <h3>HTML</h3>
+        <p>Menyusun struktur dan konten halaman web.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-mark">CS</div>
+        <h3>CSS</h3>
+        <p>Merancang tampilan, tata letak, dan responsivitas.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-mark">JS</div>
+        <h3>JavaScript</h3>
+        <p>Menambahkan interaktivitas dan logika program.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-mark">C++</div>
+        <h3>C++</h3>
+        <p>Pemrograman terstruktur dan penyelesaian masalah algoritmik.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-mark">CD</div>
+        <h3>CorelDraw</h3>
+        <p>Desain grafis vektor dan tata letak visual.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-mark">AI</div>
+        <h3>Adobe Illustrator</h3>
+        <p>Desain grafis vektor lebih profesional.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENGALAMAN -->
+  <section id="pengalaman" class="sheet">
+    <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
+    <span class="sheet-tab">04 — Pengalaman</span>
+    <h2>Pengalaman organisasi</h2>
+    <p class="lede">Riwayat keaktifan berorganisasi, dari lingkungan sekolah hingga kegiatan sosial dan literasi digital.</p>
+
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-period">2023 / 2024</div>
+        <div class="t-role">Anggota Bidang 9 — Teknologi Informasi dan Komunikasi (TIK)</div>
+        <div class="t-org">OSIS SMAN 5 Pinrang</div>
+        <p class="t-desc">Membantu pengelolaan aspek teknologi dan informasi dalam kegiatan organisasi sekolah.</p>
+      </div>
+      <div class="t-item">
+        <div class="t-period">2023 / 2026</div>
+        <div class="t-role">Pandu Digital</div>
+        <div class="t-org">Komunitas literasi digital</div>
+        <p class="t-desc">Berperan dalam kegiatan edukasi dan literasi digital di lingkungan sekitar.</p>
+      </div>
+      <div class="t-item">
+        <div class="t-period">2024 / 2025</div>
+        <div class="t-role">Sekretaris OSIS</div>
+        <div class="t-org">SMAN 5 Pinrang</div>
+        <p class="t-desc">Mengelola administrasi, surat-menyurat, dan dokumentasi kegiatan organisasi.</p>
+      </div>
+      <div class="t-item">
+        <div class="t-period">2024 / 2026</div>
+        <div class="t-role">Palang Merah Remaja (PMR)</div>
+        <div class="t-org">Organisasi kepalangmerahan sekolah</div>
+        <p class="t-desc">Turut serta dalam kegiatan kepalangmerahan dan penanaman nilai-nilai kemanusiaan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESTASI -->
+  <section id="prestasi" class="sheet">
+    <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
+    <span class="sheet-tab">05 — Prestasi</span>
+    <h2>Prestasi</h2>
+    <p class="lede">Riwayat prestasi akademik dan non-akademik yang semasa SMA saya raih.</p>
+
+    <div class="sub-h">Akademik</div>
+    <div class="stamp-grid">
+      <div class="stamp-card">
+        <div class="tag">Olimpiade</div>
+        <h4>Peraih Medali Emas Olimpiade Matematika University.Id</h4>
+        <p>Predikat Medali Emas dalam Olimpiade Matematika Tingkat Nasional Kompetisi Festival Olimpiade Periode Desember Tahun 2025 yang diselenggarakan oleh Lembaga Pendidikan Resmi University ID Education Platform.</p>
+      </div>
+      <div class="stamp-card">
+        <div class="tag">Olimpiade</div>
+        <h4>Peraih Medali Emas Olimpiade Informatika University.Id</h4>
+        <p>Predikat Medali Emas dalam Olimpiade Informatika Tingkat Nasional Kompetisi Festival Olimpiade Periode Desember Tahun 2025 yang diselenggarakan oleh Lembaga Pendidikan Resmi University ID Education Platform.</p>
+      </div>
+      <div class="stamp-card">
+        <div class="tag">Olimpiade</div>
+        <h4>Peraih Medali Emas Olimpiade Sosiologi University.Id</h4>
+        <p>Predikat Medali Emas dalam Olimpiade Sosiologi Tingkat Nasional Kompetisi Festival Olimpiade Periode Desember Tahun 2025 yang diselenggarakan oleh Lembaga Pendidikan Resmi University ID Education Platform.</p>
+      </div>
+      <div class="stamp-card">
+        <div class="tag">Olimpiade</div>
+        <h4>Peraih Medali Emas Olimpiade Matematika Olimnas.Id</h4>
+        <p>Predikat Medali Emas dalam Olimpiade Matematika Tingkat Nasional Olimpiade Nasional Periode Desember Tahun 2025 yang diselenggarakan oleh CV. Alberta Nusa Education.</p>
+      </div>
+      <div class="stamp-card">
+        <div class="tag">Olimpiade</div>
+        <h4>Peraih Medali Perak Olimpiade Matematika NBSK</h4>
+        <p>Predikat Medali Perak dalam Olimpiade Matematika Tingkat Nasional Nusantara Best Student Competition Tahun 2025 yang diselenggarakan oleh Liga Olimpiade dan Smart Student.</p>
+      </div>
+      <div class="stamp-card">
+        <div class="tag">Olimpiade</div>
+        <h4>Peraih Medali Perunggu Olimpiade Matematika KPJI</h4>
+        <p>Predikat Medali Perunggu dalam Olimpiade Matematika Tingkat Nasional Kompetisi Pelajar Jenius Indonesia Tahun 2025 yang diselenggarakan oleh Liga Olimpiade.</p>
+      </div>
+    </div>
+
+    <div class="sub-h">Non-akademik</div>
+    <div class="stamp-grid">
+      <div class="stamp-card">
+        <div class="tag">Kegiatan</div>
+        <h4>1 Sekolah 1 Programmer Andalan</h4>
+        <p>Peserta serta meraih lencana Pandu Daksa Pertama SMAN 5 Pinrang, Se-provinsi Sulawesi Selatan, pada 19–20 Juli 2025.</p>
+      </div>
+      <div class="stamp-card">
+        <div class="tag">Lomba</div>
+        <h4>Semi Finalist JHIC</h4>
+        <p>Perwakilan dan Anggota tim Tempekalcer SMAN 5 Pinrang, di Jagoan Hosting Infra Competition, merupakan lomba membuat website sekolah tingkat nasional, pada tahun 2025.</p>
+      </div>
+      <div class="stamp-card">
+        <div class="tag">Lomba</div>
+        <h4>Juara 1 Lomba Jurnalistik</h4>
+        <p>Peraih Juara 1 dalam Lomba Jurnalistik di Jumpa Bhakti Gembira Kab. Pinrang tahun 2024.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYEK -->
+  <section id="proyek" class="sheet">
+    <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
+    <span class="sheet-tab">06 — Proyek</span>
+    <h2>Proyek</h2>
+    <p class="lede">Format tampilan proyek — sesuaikan judul, deskripsi, dan teknologi yang digunakan dengan proyek yang pernah kamu kerjakan.</p>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="tag-row"><span class="tag-chip">HTML</span><span class="tag-chip">CSS</span><span class="tag-chip">JavaScript</span></div>
+        <h4>Website SMAN 5 Pinrang by TempeKalcer</h4>
+        <p><a href="project/web_smanlip/index.html" target="_blank" rel="noopener noreferrer">Lihat proyek</a></p>
+      </div>
+      <div class="project-card">
+        <div class="tag-row"><span class="tag-chip">HTML</span><span class="tag-chip">CSS</span><span class="tag-chip">JavaScript</span></div>
+        <h4>Biodata Diri V1</h4>
+        <p><a href="project/project1/index.html" target="_blank" rel="noopener noreferrer">Lihat proyek</a></p>
+      </div>
+      <div class="project-card">
+        <div class="tag-row"><span class="tag-chip">HTML</span><span class="tag-chip">CSS</span><span class="tag-chip">JavaScript</span></div>
+        <h4>Biodata Diri V2</h4>
+        <p><a href="project/project2/index.html" target="_blank" rel="noopener noreferrer">Lihat proyek</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="sheet">
+    <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
+    <span class="sheet-tab">07 — Kontak</span>
+    <h2>Kontak</h2>
+    <p class="lede">Ikuti atau hubungi saya lewat tautan berikut:</p>
+
+    <div class="social-grid">
+      <a class="social-btn" href="https://linktr.ee/al_hikmal" target="_blank" rel="noopener">
+        <span class="social-mark">LT</span>
+        <span class="social-info"><span class="name">Linktree</span><span class="handle">linktr.ee/al_hikmal</span></span>
+      </a>
+      <a class="social-btn" href="https://linkedin.com/in/al-hikmal" target="_blank" rel="noopener">
+        <span class="social-mark">LI</span>
+        <span class="social-info"><span class="name">LinkedIn</span><span class="handle">/in/al-hikmal</span></span>
+      </a>
+      <a class="social-btn" href="https://instagram.com/al_hikml" target="_blank" rel="noopener">
+        <span class="social-mark">IG</span>
+        <span class="social-info"><span class="name">Instagram</span><span class="handle">@al_hikml</span></span>
+      </a>
+      <a class="social-btn" href="https://tiktok.com/@al_hikmal" target="_blank" rel="noopener">
+        <span class="social-mark">TT</span>
+        <span class="social-info"><span class="name">TikTok</span><span class="handle">@al_hikmal</span></span>
+      </a>
+      <a class="social-btn" href="https://facebook.com/al.hikmal" target="_blank" rel="noopener">
+        <span class="social-mark">FB</span>
+        <span class="social-info"><span class="name">Facebook</span><span class="handle">facebook.com/al.hikmal</span></span>
+      </a>
+      <a class="social-btn" href="https://youtube.com/@al_hikml" target="_blank" rel="noopener">
+        <span class="social-mark">YT</span>
+        <span class="social-info"><span class="name">YouTube</span><span class="handle">@al_hikml</span></span>
       </a>
     </div>
-  </div>
-</section>
+  </section>
+
+</main>
 
 <footer>
   <p>Copyright &copy; 2026 AL Hikmal, dibuat dengan ❤ dan es kopi</p>
 </footer>
 
 <script>
-  // Custom cursor
-  const cursor = document.getElementById('cursor');
-  const ring = document.getElementById('cursorRing');
-  let mx = 0, my = 0;
+  (function(){
+    var themeBtn = document.getElementById('themeBtn');
+    var root = document.documentElement;
 
-  document.addEventListener('mousemove', e => {
-    mx = e.clientX; my = e.clientY;
-    cursor.style.left = mx + 'px';
-    cursor.style.top = my + 'px';
-    ring.style.left = mx + 'px';
-    ring.style.top = my + 'px';
-  });
+    function applyStored(){
+      try{
+        var saved = localStorage.getItem('ah-theme-pref');
+        if(saved === 'dark' || saved === 'light'){
+          root.setAttribute('data-theme', saved);
+        }
+      }catch(e){ /* localStorage unavailable, ignore */ }
+    }
+    applyStored();
 
-  document.querySelectorAll('a, button, .social-icon, .project-card, .stat-card').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.style.width = '20px'; cursor.style.height = '20px';
-      ring.style.width = '50px'; ring.style.height = '50px';
+    themeBtn.addEventListener('click', function(){
+      var current = root.getAttribute('data-theme');
+      var isDarkNow = current === 'dark' || (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      var next = isDarkNow ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try{ localStorage.setItem('ah-theme-pref', next); }catch(e){ /* ignore */ }
     });
-    el.addEventListener('mouseleave', () => {
-      cursor.style.width = '12px'; cursor.style.height = '12px';
-      ring.style.width = '36px'; ring.style.height = '36px';
-    });
-  });
 
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); }
+    var menuBtn = document.getElementById('menuBtn');
+    var navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', function(){
+      navLinks.classList.toggle('open');
     });
-  }, { threshold: 0.15 });
-  reveals.forEach(r => observer.observe(r));
-
-  // Smooth active nav
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+    navLinks.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ navLinks.classList.remove('open'); });
     });
-    navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current ? '#fff' : '';
-    });
-  });
+  })();
 </script>
+
 </body>
 </html>
